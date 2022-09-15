@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "AddToCart";
+}
+
+<h1>Added To Cart</h1>
+<table>
+    <tr>
+        <td>Pizza Name</td>
+        <td> Price</td>
+    </tr>
+    @foreach (var item in ViewBag.pizzas)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td> @item.Price</td>
+         </tr>
+    }
+</table>
+
+@Html.ActionLink("Back to Home","Index","Pizza")
+

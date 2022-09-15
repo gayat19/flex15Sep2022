@@ -1,0 +1,37 @@
+﻿@model IEnumerable<MyFirstWebApp.Models.Pizza>
+
+
+    <style>
+        .prod{
+            position:relative;
+            float:left;
+        }
+    </style>
+
+@foreach (var item in Model)
+{
+     <div  class="col-lg-4 col-md-12 mb-4 prod">
+    <div class="card card-cascade wider mb-4">
+
+      <!--Card image-->
+      <div class="view view-cascade">
+        <img src=@item.Pic class="card-img-top">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <div class="card-body card-body-cascade text-center">
+        <!--Title-->
+        <h4 class="card-title"><strong>@item.Name</strong></h4>
+        <h5 class="indigo-text"><strong>Rs. @item.Price</strong></h5>
+
+      <form   method="post">
+            <p class="card-text">
+            <button asp-action="AddToCart" asp-controller="Pizza" asp-route-pid=@item.Id class="btn btn-primary">Add to cart</button>
+        </p>
+      </form>
+
+      </div>
+    </div>
+    </div>
+}

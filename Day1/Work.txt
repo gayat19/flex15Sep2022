@@ -1,0 +1,89 @@
+Pizza store
+MVC APP
+  MVC App which displays the pizza details
+  Allows user to Register and Login
+  
+API
+  Provides the communication for the Pizza App
+  
+
+HTML+jQuery+Ajax
+  Consume the API
+
+Day1
+  Basic aspects of MVC and understanding the template
+  More on MVC
+
+Day2
+  EF Core
+  Repo Pattern
+
+Day3
+  API creation
+  Security
+ 
+Day4
+  Consumption
+
+---------------------------------------
+MVC
+  SOC
+
+Data
+UI
+Controls the flow
+
+
+HTML -
+Data - static
+UI - HTML tags
+Contol - links
+
+ASP
+Data - class+objects
+UI - ASPX - source
+Control - ASPX - code behind
+
+ASP Core
+MVC
+Data - Model - Food and the menu items
+UI - View Dishes+Menu
+Control - controller - Waiter
+Manager - Routing
+
+Self hosting
+CMD
+Execute from CMD
+Portable
+PI
+Easy - Program.cs -> Main
+
+http://baseurl/<controllername>/<actionmethodname>/<parameter?>
+
+Controller
+  ViewData
+  ViewBag
+
+Strongly typed view
+
+Break
+ ----Be back by 11:20---
+
+Design your data
+ Pizza
+   Id
+   Name
+   price
+   pic
+
+List my Pizza
+PizzaController - Index
+
+Add to cart -> HTML helper tas to go to another action method
+
+In the crt use HTML helper class to generate the control - > hyperlink
+
+
+  
+
+
