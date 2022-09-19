@@ -6,5 +6,7 @@
         public string Name { get; set; }
         public float Price { get; set; }
         public string Pic { get; set; }
+
+        public ICollection<OrderPizzas> Orders { get; set; }
     }
 }

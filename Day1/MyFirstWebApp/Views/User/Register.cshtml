@@ -1,0 +1,11 @@
+﻿@model MyFirstWebApp.Models.User
+
+<form asp-action="Register" method="post">
+    <label asp-for="Username" class="from-control">Username</label>
+    <input type="text"  name="Username" class="from-control" />
+    <label asp-for="Password" class="from-control">Password</label>
+    <input type="password" name="Password" class="from-control" />
+    <label asp-for="FullName" class="from-control">Fullname</label>
+    <input type="text" name="Fullname" class="from-control" />
+    <button class="btn btn-primary">Register</button>
+</form>

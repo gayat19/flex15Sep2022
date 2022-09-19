@@ -1,0 +1,93 @@
+Pizza store
+MVC APP
+  MVC App which displays the pizza details
+  Allows user to Register and Login
+  
+API
+  Provides the communication for the Pizza App
+  
+
+HTML+jQuery+Ajax
+  Consume the API
+
+Day1
+  Basic aspects of MVC and understanding the template
+  More on MVC
+
+Day2
+  EF Core
+  Repo Pattern
+
+Day3
+  API creation
+  Security
+ 
+Day4
+  Consumption
+
+---------------------------------------
+
+
+Design your data
+ Pizza
+   Id
+   Name
+   price
+   pic
+EF Core
+  ORM
+
+ADO.NET -> mapping of tables-> collection/ Row-> object
+CRUD -> Implementation
+
+ORM -> EF core->(Varied Database)/ EF(SQL and a little few)
+
+Code First Approch -> NEw project with strong developers
+Database First approch -> Existing Project where DB is already presnet/ Strong DB team
+
+Code First Approch
+   Design the Classes
+   Determine the relationship
+   Ensure the Relational and Domain Integrity
+	Import the packages
+   Create the connection - using the DBConetxt
+	Add the table-required classes as collection
+   Do teh migration
+
+User
+  orders - Collection 
+Pizza
+  orders - Colelction
+Order
+  OrderNumebr
+  Username
+  Pizzas-collection
+  totalprice - float
+  user - object - username as foreign key
+Order Pizza
+  OrderNumber
+  PizzaId
+  Quantity
+  Order - -object -OrderNumber as foreign key
+  Pizza -  object - PizzaId as foreign key 
+
+User
+  IRepo 
+    Add, Get,GetAll, Edit, Delete
+
+Controller And Views
+  UserController
+    Register - Get and Post
+    Login - Get and Post
+  Generate the views
+
+
+  
+  
+
+
+
+
+  
+
+
