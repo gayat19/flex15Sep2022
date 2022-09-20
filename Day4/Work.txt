@@ -36,33 +36,38 @@ Design your data
    pic
 
 
-RESTful Service
-  Client-Server
-  Flexible - Scaling, Diff type os Authentication, Independent maximum
-  Cache enabled
-  Consistent Interface -
-       HTTP Methods -> HTTP VErbs
-      	GET
- 			POST
-			PUT
-			DELETE
-		Pizza details
-      http://baseaddress/Pizza -> GET -  Gets all the pizzas
-		http://baseaddress/Pizza/101 -> GET -  Get the pizza with ID 101
-		http://baseaddress/Pizza - POST - With pizza object in the body - Creates a new PIzza/ Adds a pizza
-		http://baseaddress/Pizza/101 - PUT - With teh pizza details in the body - Edits the pizza with id 101 and updates the new data
-		http://baseaddress/Pizza/101 - DELETE - Deletesteh pizza witrh ID 101
- 
-  Consistent Return data
-		Accepted format -> XML, JSON, any mediatype 
-      Status codes -> 
-			1XX - info
-			2XX - Success
-			3XX - Redirection
-			4XX - Client side error
-			5XX - Server side error
-curl -X GET http://localhost:5298/WeatherForecast -H 'accept: application/xml'
+Consume the API
+  HTML+jQuery
+  MVC
+  From other API
 
+DI
+ Loosely Coupled - Change becomess easy
+ Unit testing
+
+Use Repo Pattern
+
+Use Async always
+
+Take authentication aznd authorization seriously
+   token
+   AuthO
+   OAuth
+   OWIn
+
+Decide on the Arch
+  Choose the Gateway if required
+  Choose the apt authentication type
+  Example - https://learn.microsoft.com/en-us/dotnet/architecture/microservices/multi-container-microservice-net-applications/implement-api-gateways-with-ocelot
+	https://auth0.com/
+
+
+  Decide the clients you are going to cater
+  Prepare teh app for the same
+    CORS, Socket layer Cerificate
+  Understand the Environment and change the settings file accordingly
+  
+  
 
 
 

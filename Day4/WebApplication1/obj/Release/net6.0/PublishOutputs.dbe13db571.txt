@@ -1,0 +1,7 @@
+E:\Corp\Skillwise\Flex-Dotent-15Sep2022\Day4\WebApplication1\obj\Release\net6.0\PubTmp\Out\WebApplication1.exe
+E:\Corp\Skillwise\Flex-Dotent-15Sep2022\Day4\WebApplication1\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+E:\Corp\Skillwise\Flex-Dotent-15Sep2022\Day4\WebApplication1\obj\Release\net6.0\PubTmp\Out\appsettings.json
+E:\Corp\Skillwise\Flex-Dotent-15Sep2022\Day4\WebApplication1\obj\Release\net6.0\PubTmp\Out\WebApplication1.dll
+E:\Corp\Skillwise\Flex-Dotent-15Sep2022\Day4\WebApplication1\obj\Release\net6.0\PubTmp\Out\WebApplication1.deps.json
+E:\Corp\Skillwise\Flex-Dotent-15Sep2022\Day4\WebApplication1\obj\Release\net6.0\PubTmp\Out\WebApplication1.runtimeconfig.json
+E:\Corp\Skillwise\Flex-Dotent-15Sep2022\Day4\WebApplication1\obj\Release\net6.0\PubTmp\Out\WebApplication1.pdb

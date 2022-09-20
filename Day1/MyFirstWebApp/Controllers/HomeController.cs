@@ -4,12 +4,15 @@ using MyFirstWebApp.Models;
 
 namespace MyFirstWebApp.Controllers;
 
+
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
 
     public HomeController(ILogger<HomeController> logger)
     {
+        int num = 0, res = 0;
+        res = 100 / num;
         _logger = logger;
     }
 

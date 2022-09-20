@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "r28UdFEVHLjTwGOcggoxyAAs4VGJR/fBEy18JyhmEjuFZjaFY1e6reekAmb0DD/bsMaLJk7CMBVRTGsflV6ZEA==",
+  "success": true,
+  "projectFilePath": "E:\\Corp\\Skillwise\\Flex-Dotent-15Sep2022\\Day4\\WebApplication1\\WebApplication1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gayat\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.15.1\\microsoft.visualstudio.azure.containers.tools.targets.1.15.1.nupkg.sha512"
+  ],
+  "logs": []
+}
