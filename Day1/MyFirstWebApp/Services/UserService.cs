@@ -1,4 +1,5 @@
 ﻿using MyFirstWebApp.Models;
+using MyFirstWebApp.Models.DTOs;
 
 namespace MyFirstWebApp.Services
 {
@@ -10,11 +11,10 @@ namespace MyFirstWebApp.Services
         {
             _repo = repo;
         }
-        public async Task<bool> Register(User user)
+        public  async Task<UserDTO>Register(User user)
         {
-            var result = false;
-            result = await _repo.Add(user)==null?false:true;
-            return result;
+            var result = await _repo.Add(user);
+            return (UserDTO)result;
         }
         public async Task<bool> Login(User user)
         {
