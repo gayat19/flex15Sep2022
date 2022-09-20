@@ -10,12 +10,12 @@ namespace MyFirstWebApp.Services
         {
             _context = context;
         }
-        public User Add(User item)
+        public async Task<User> Add(User item)
         {
             try
             {
                 _context.Users.Add(item);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
                 return item;
             }
             catch (Exception e)
@@ -26,15 +26,15 @@ namespace MyFirstWebApp.Services
             return null;
         }
 
-        public User Delete(string key)
+        public async Task<User> Delete(string key)
         {
             try
             {
-                var user = Get(key);
+                var user = await Get(key);
                 if(user !=null)
                 {
                     _context.Users.Remove(user);
-                    _context.SaveChanges();
+                    await _context.SaveChangesAsync();
                     return user;
                 }
             }
@@ -46,7 +46,7 @@ namespace MyFirstWebApp.Services
             return null;
         }
 
-        public User Get(string key)
+        public async Task<User> Get(string key)
         {
             try
             {
@@ -61,7 +61,7 @@ namespace MyFirstWebApp.Services
             return null;
         }
 
-        public ICollection<User> GetAll()
+        public async Task<ICollection<User>> GetAll()
         {
             try
             {
@@ -78,15 +78,15 @@ namespace MyFirstWebApp.Services
             return null;
         }
 
-        public User Update(User item)
+        public async Task<User> Update(User item)
         {
             try
             {
-                var user = Get(item.Username);
+                var user = await Get(item.Username);
                 if (user != null)
                 {
                     user.Password = item.Password;
-                    _context.SaveChanges();
+                    await _context.SaveChangesAsync();
                     return item;
                 }
             }

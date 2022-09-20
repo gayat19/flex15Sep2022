@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MyPizzaAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [EnableCors("MyCors")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]

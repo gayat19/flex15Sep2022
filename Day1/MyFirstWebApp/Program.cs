@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<PizzaStroreContext>();
-builder.Services.AddScoped<IRepo<string, User>, UserRepo>();
+builder.Services.AddScoped<IRepo<string, User>, UserAPIRepo>();
 builder.Services.AddScoped<UserService>();
 
 var app = builder.Build();

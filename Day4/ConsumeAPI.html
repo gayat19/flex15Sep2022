@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $.ajax({
+                    url:"http://localhost:5298/WeatherForecast",
+                    type:"GET",
+                }).done(function(data){
+                    console.log(data)
+                }).fail(function(){
+                    alert('Impossible to call the api')
+                })
+                })
+        </script>
+    </head>
+    <body>
+        <h2>Consume API</h2>
+    </body>
+</html>

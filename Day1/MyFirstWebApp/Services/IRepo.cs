@@ -2,11 +2,11 @@
 {
     public interface IRepo<K,T>
     {
-        T Add(T item);
-        T Get(K key);
-        ICollection<T> GetAll();
-        T Update(T item);
-        T Delete(K key);
+        Task<T> Add(T item);
+        Task<T> Get(K key);
+        Task<ICollection<T>> GetAll();
+        Task<T> Update(T item);
+        Task<T> Delete(K key);
 
     }
 }

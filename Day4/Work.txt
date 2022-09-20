@@ -1,0 +1,70 @@
+Pizza store
+MVC APP
+  MVC App which displays the pizza details
+  Allows user to Register and Login
+  
+API
+  Provides the communication for the Pizza App
+  
+
+HTML+jQuery+Ajax
+  Consume the API
+
+Day1
+  Basic aspects of MVC and understanding the template
+  More on MVC
+
+Day2
+  EF Core
+  Repo Pattern
+
+Day3
+  API creation
+  Security
+ 
+Day4
+  Consumption
+
+---------------------------------------
+
+
+Design your data
+ Pizza
+   Id
+   Name
+   price
+   pic
+
+
+RESTful Service
+  Client-Server
+  Flexible - Scaling, Diff type os Authentication, Independent maximum
+  Cache enabled
+  Consistent Interface -
+       HTTP Methods -> HTTP VErbs
+      	GET
+ 			POST
+			PUT
+			DELETE
+		Pizza details
+      http://baseaddress/Pizza -> GET -  Gets all the pizzas
+		http://baseaddress/Pizza/101 -> GET -  Get the pizza with ID 101
+		http://baseaddress/Pizza - POST - With pizza object in the body - Creates a new PIzza/ Adds a pizza
+		http://baseaddress/Pizza/101 - PUT - With teh pizza details in the body - Edits the pizza with id 101 and updates the new data
+		http://baseaddress/Pizza/101 - DELETE - Deletesteh pizza witrh ID 101
+ 
+  Consistent Return data
+		Accepted format -> XML, JSON, any mediatype 
+      Status codes -> 
+			1XX - info
+			2XX - Success
+			3XX - Redirection
+			4XX - Client side error
+			5XX - Server side error
+curl -X GET http://localhost:5298/WeatherForecast -H 'accept: application/xml'
+
+
+
+
+
+

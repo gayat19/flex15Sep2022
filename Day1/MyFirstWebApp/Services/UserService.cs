@@ -10,16 +10,16 @@ namespace MyFirstWebApp.Services
         {
             _repo = repo;
         }
-        public bool Register(User user)
+        public async Task<bool> Register(User user)
         {
             var result = false;
-            result = _repo.Add(user)==null?false:true;
+            result = await _repo.Add(user)==null?false:true;
             return result;
         }
-        public bool Login(User user)
+        public async Task<bool> Login(User user)
         {
             var result = false;
-            var myUser = _repo.Get(user.Username);
+            var myUser = await _repo.Get(user.Username);
             if (myUser != null)
             {
                 if (myUser.Password == user.Password)

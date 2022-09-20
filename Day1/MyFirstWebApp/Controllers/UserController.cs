@@ -17,9 +17,9 @@ namespace MyFirstWebApp.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Register(User user)
+        public async Task<IActionResult> Register(User user)
         {
-            var result = _userService.Register(user);
+            var result = await _userService.Register(user);
             if(result)
                 return RedirectToAction("Index","Home");
             ViewBag.Error = "Unable to register user";

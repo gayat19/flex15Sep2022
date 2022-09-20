@@ -31,7 +31,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateAudience = false
         };
     });
-
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("MyCors", opts => {
+        opts.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+    });
+});
 
 builder.Services.AddControllers().AddXmlDataContractSerializerFormatters();
 
@@ -77,7 +82,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors("MyCors");
 app.UseAuthentication();
 app.UseAuthorization();
 
